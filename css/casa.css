@@ -1,0 +1,180 @@
+html, body {
+		height: 100%;
+}
+
+html {
+	background: url(../images/bgr.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body {
+	font-family: Calibri,'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+	max-width:100%;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0)));
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+	background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+	background: linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+}
+
+a, a:visited {
+	color: black;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: red;
+}
+
+#name {
+	display: block;
+}
+
+#name h1 {
+	font-size: 100px;
+	margin: 0;
+	padding: 0 25px;
+	text-shadow: 4px 4px 2px #cccccc;
+	filter: dropshadow(color=#cccccc, offx=4, offy=4);
+}
+
+#name h1 span:hover {
+	color: red;
+}
+
+#copytext {
+	float: left;
+	display:block;
+	width:90%;
+	text-align:right;
+	padding: 0 25px 25px 25px;
+}
+
+#copytext p {
+	margin: 0;
+	color: #ddd;
+}	
+
+#container {
+	width: 820px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -140px;
+	margin-left: -410px;
+	border: 1px solid white;
+	background: white;
+
+	-moz-box-shadow: 10px 10px 35px #999;
+	-webkit-box-shadow: 10px 10px 35px #999;
+	box-shadow: 10px 10px 35px #999;
+
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#container, .removetouch {
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+
+	-moz-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(10deg, -10deg);
+	-webkit-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(10deg, -10deg);
+	-o-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(10deg, -10deg);
+	-ms-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(10deg, -10deg);
+	transform: scale(1) rotate(0deg) translate(0px, 0px) skew(10deg, -10deg);
+	
+}
+
+#container:hover, .touchfallback {
+	-webkit-transition: all 1000ms ease;
+	-moz-transition: all 1000ms ease;
+	-o-transition: all 1000ms ease;
+	transition: all 1000ms ease;
+
+	-moz-transform: scale(1.2) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);
+	-webkit-transform: scale(1.2) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);
+	-o-transform: scale(1.2) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);
+	-ms-transform: scale(1.2) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);
+	transform: scale(1.2) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);
+
+}
+
+#container:hover > #name > #more {
+	display: block;
+}
+
+#footer {
+	float: left;
+	clear: both;
+	position: fixed;
+	bottom:0; left:0; right:0;
+	padding:2px 10px 5px 10px;
+	background: #fff;
+	opacity:0.6;
+  	filter:alpha(opacity=60);
+}
+
+#footer a, #footer a.visited, #footer a.hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+#spielzeug {
+	display: none;
+	color: red;
+	font-size: 50px;
+	width:100%;
+	padding: 10px 0 0 20px;
+}
+
+#more {
+	display: none;
+	padding-left:145px;
+}
+
+#more ul {
+	list-style: none;
+	width:100px;
+	padding: 0 50px;
+	display: inline;
+	list-style-position:inside;
+}
+
+#more ul li {
+	background: url(../images/soschl.png) no-repeat top left;
+	padding: 5px 30px;
+	line-height: 12px;
+	display: inline;
+	float: left;
+}
+
+#more ul li a {
+	display: block;
+}
+
+#more ul li.twitter {
+	background-position: 0 -136px; height: 24px;
+}
+#more ul li.xing {
+	background-position: 0 -170px;height: 24px;
+}
+#more ul li.blog {
+	background-position: 0 -34px;height: 24px;
+}
+#more ul li.gplus {
+	background-position: 0 -102px;height: 24px;
+}
+#more ul li.delicious {
+	background-position: 0 0;height: 24px;
+}
+#more ul li.github {
+	background-position: 0 -68px;height: 24px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carsten Sandtner</title>
+	<!-- Nomalize CSS -->
+	<link href="css/normalize.css?v0.1" rel="stylesheet" type="text/css">
+	<link href="css/casa.css?v0.3" rel="stylesheet" type="text/css">
+	<meta name="robots" content="index,follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="keywords" content="carsten,sandtner,php,css3,html,javascript,js,nerd,writing,music">
+	<meta name="description" content="Personal website of carsten sandtner. Nothing more, nothing less.">
+	<!--[if IE]>
+	<style>
+		#spielzeug {
+			display: block;
+		}
+		#more {
+			display: block;
+		}
+
+	</style>
+	<![endif]-->
+</head>
+<body>
+	<div id="spielzeug">Try using a CSS3/HTML5 capable browser</div>
+	<div id="container" class="centered">
+		<div id="name">
+			<h1>Carsten Sandtner<span>.</span></h1>
+			<div id="more">
+				<ul>
+					<li class="twitter"><a href="http://twitter.com/casarock">@casarock</a></li>
+					<li class="xing"><a href="https://www.xing.com/profile/Carsten_Sandtner">Xing</a></li>
+					<li class="delicious"><a href="http://www.delicious.com/casarock">delicious</a></li>
+					<li class="gplus"><a href="https://plus.google.com/u/0/107936787294335253238/posts">Google+</a></li>
+					<li class="github"><a href="https://github.com/casarock">Github</a></li>
+					<li class="blog"><a href="http://www.casa-rock.de">Blog</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="copytext">
+			<p>php, javascript, iOS, HTML5, CSS3, writing, nerd, dad, husband</p>
+		</div>
+	</div>
+	<div id="footer">
+		&copy; 2012 by Carsten Sandtner
+	</div>
+	<script type="text/javascript">
+		// Some js-Fallbacks for Touch-Devices 
+		var ele = document.getElementById('container');
+		var showme = document.getElementById('more');
+		var hasBeenTouched = false;
+
+		ele.addEventListener('touchstart', function(ev) {
+			if (!hasBeenTouched) {
+				ele.className = 'touchfallback';
+				showme.style.display = "block";
+				hasBeenTouched = true;
+			}
+			else {
+				ele.className = '';
+				window.setTimeout(removeMe, 200);
+			}
+		});
+
+		function removeMe() {
+			ele.className = 'removetouch';
+			showme.style.display = "none";
+			hasBeenTouched = false;
+		}
+
+	</script>
+
+	<!-- Piwik --> 
+	<script type="text/javascript">
+	var pkBaseURL = (("https:" == document.location.protocol) ? "https://st.appsbu.de/" : "http://st.appsbu.de/");
+	document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+	</script><script type="text/javascript">
+	try {
+	var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+	piwikTracker.trackPageView();
+	piwikTracker.enableLinkTracking();
+	} catch( err ) {}
+	</script><noscript><p><img src="http://st.appsbu.de/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+	<!-- End Piwik Tracking Code -->
+</body>
+</html>
